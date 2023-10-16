@@ -18,8 +18,8 @@ const markup = galleryItems.map(
 );
 ///~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 list.insertAdjacentHTML('beforeend', markup.join(''));
-const lightbox = new SimpleLightbox('.gallery a', {
+const  lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
-lightbox.next(); 
+lightbox.next(); //ffff
