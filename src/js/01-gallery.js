@@ -23,6 +23,59 @@ const  lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import 'basiclightbox/dist/basicLightbox.min.css';
 // import * as basicLightbox from 'basiclightbox';
 // const list = document.querySelector('.gallery');
