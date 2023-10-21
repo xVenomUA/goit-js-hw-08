@@ -11,15 +11,19 @@ if (parse_elemet) {
 
 const onForm = () => { 
     const formData = form.elements;
-    if (formData.email.value && formData.message.value) {
-        const objofElement = {
-            email: formData.email.value,
-            message: formData.message.value,
-        };
+    const objofElement = {};
+    // for (let i = 0; i < formData.length; i++) {
+    //     if (formData[i].name === 'email') {
+    //         objofElement.email = formData[i].value;
+    //     }
+    //     if (formData[i].name === 'message') {
+    //         objofElement.message = formData[i].value;
+    //     }
+    // }
+    objofElement.email = formData.email.value;
+    objofElement.message = formData.message.value;
         localStorage.setItem(KEY_UPDATE_FORM, JSON.stringify(objofElement));
-    }
-} 
-
+};
 form.addEventListener('input', throttle(onForm, 500));
 
 form.addEventListener('submit', evt => {
